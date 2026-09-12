@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KAPTIM — Hesap Silme</title>
+<style>
+:root{--fg:#1c1c1e;--muted:#6b6b70;--bg:#fff;--brand:#FF6B35;--line:#e5e5ea}
+@media (prefers-color-scheme:dark){:root{--fg:#f2f2f7;--muted:#a1a1a6;--bg:#111;--line:#2c2c2e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+ font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:48px 24px 80px}
+h1{font-size:30px;margin:0 0 6px;letter-spacing:-.02em}
+h2{font-size:19px;margin:36px 0 10px;letter-spacing:-.01em}
+.date{color:var(--muted);font-size:14px;margin-bottom:32px}
+.bar{height:4px;background:linear-gradient(90deg,#FF6B35,#F7B538);border-radius:2px;margin-bottom:28px}
+ol,ul{padding-left:22px}
+li{margin:6px 0}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:15px}
+th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+th{background:rgba(255,107,53,.08);font-weight:600}
+a{color:var(--brand)}
+.note{border:1px solid var(--line);border-left:4px solid var(--brand);
+ border-radius:8px;padding:14px 16px;margin:18px 0;background:rgba(255,107,53,.05)}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+</style>
+</head>
+<body><div class="wrap">
+<div class="bar"></div>
+<h1>Hesap ve veri silme</h1>
+<div class="date">KAPTIM · Son güncelleme: 12 Eylül 2026</div>
+
+<h2>Uygulamadan silme (en hızlı yol)</h2>
+<ol>
+  <li>KAPTIM uygulamasını aç ve hesabına giriş yap.</li>
+  <li><strong>Profil</strong> sekmesine git.</li>
+  <li>Sayfanın altındaki <strong>Diğer</strong> bölümünde <strong>“Hesabımı sil”</strong>e dokun.</li>
+  <li>Uyarıyı okuyup <strong>“Hesabımı sil”</strong> ile onayla.</li>
+</ol>
+<p>Onayladığın anda hesabın ve verilerin sunucudan kaldırılır; işlem geri alınamaz ve
+oturumun kapanır.</p>
+
+<h2>Uygulamaya giremiyorsan</h2>
+<p>Telefonuna erişimin yoksa ya da giriş yapamıyorsan, hesabına kayıtlı e-posta adresinden
+<a href="mailto:destek@kaptim.app?subject=Hesap%20silme%20talebi">destek@kaptim.app</a>
+adresine <em>“Hesap silme talebi”</em> konulu bir e-posta gönder. Talebini kimliğini
+doğruladıktan sonra <strong>en geç 30 gün içinde</strong> tamamlarız.</p>
+
+<h2>Hangi veriler siliniyor?</h2>
+<table>
+  <tr><th>Veri</th><th>Ne oluyor?</th></tr>
+  <tr><td>Hesap bilgilerin (ad, e-posta, şehir/ilçe)</td><td>Kalıcı olarak silinir</td></tr>
+  <tr><td>Aldığın indirim kodları</td><td>Kalıcı olarak silinir</td></tr>
+  <tr><td>Favori mekânların</td><td>Kalıcı olarak silinir</td></tr>
+  <tr><td>Uygulama içi bildirimlerin</td><td>Kalıcı olarak silinir</td></tr>
+  <tr><td>Bildirim için kayıtlı cihazın</td><td>Kaydı kaldırılır, bildirim gönderilmez</td></tr>
+  <tr><td>Giriş bilgilerin (Cognito kullanıcısı)</td><td>Silinir; aynı e-postayla yeniden kayıt olabilirsin</td></tr>
+  <tr><td><strong>İşletme hesabıysan:</strong> işletme kaydın ve kampanyaların</td><td>Kalıcı olarak silinir</td></tr>
+</table>
+
+<div class="note">
+  <strong>Saklama süresi:</strong> Silme işlemi anında uygulanır; yedeklerde kalan kopyalar
+  en geç <strong>30 gün</strong> içinde döngüden çıkar. Yasal olarak saklamak zorunda
+  olduğumuz bir kayıt yoktur; konum verisi zaten hiçbir zaman sunucuya gönderilmez.
+</div>
+
+<h2>Uygulamayı silmek yeterli mi?</h2>
+<p>Hayır. Uygulamayı telefondan kaldırmak hesabını silmez; yukarıdaki adımlardan birini
+izlemen gerekir.</p>
+
+<footer>
+  KAPTIM · <a href="gizlilik.html">Gizlilik Politikası</a> ·
+  <a href="destek.html">Destek</a> ·
+  <a href="mailto:destek@kaptim.app">destek@kaptim.app</a>
+</footer>
+</div></body>
+</html>
